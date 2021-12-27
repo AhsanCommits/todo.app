@@ -1,56 +1,30 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="style.css" />
     <title>Todo List</title>
   </head>
   <body>
-    <div class="container">
-      <header class="text-center text-light my-4">
-        <h1 class="mb-4">Todo List</h1>
-        <form class="search" id="searchForm">
-          <input
-            class="form-control m-auto"
-            type="text"
-            name="search"
-            placeholder="search todos" autocomplete="off"
-            id="searchInput"
-          />
-        </form>
-      </header>
+    <h1>todos</h1>
+    <form id="form">
+      <input
+        type="text"
+        class="input"
+        id="input"
+        placeholder="Enter your todo"
+        autocomplete="off"
+      />
 
-      <ul class="list-group todos mx-auto text-light" id="parentUL"></ul>
-      <ul class="list-group todos mx-auto text-light" id="parentULSearch"></ul>
-      <small class="small"
-        >Left Click to toggle completed. <br />
-        Right Click to delete todo.</small
-      >
-      <form class="add text-center my-4" id="addForm">
-        <label class="text-light">Enter a new todo...</label>
-        <input
-          class="form-control m-auto"
-          type="text"
-          name="add"
-          id="addInput"
-          autocomplete="off"
-        />
-      </form>
-    </div>
-
-    <script src="app.js"></script>
+      <ul class="todos" id="todos"></ul>
+    </form>
+    <small
+      >Left Click to toggle completed. <br />
+      Right Click to delete todo.</small
+    >
+    <script src="script.js"></script>
   </body>
 </html>

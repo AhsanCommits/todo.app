@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3450a1;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  margin: 0;
+  width: 100%;
+}
+
+h1 {
+  color: #fff;
+  font-size: 10rem;
+  text-align: center;
+  opacity: 0.4;
+  position: absolute;
+  top: 1rem;
+}
+form {
+  box-shadow: 0 4px 10px #041955;
+  max-width: 100%;
+  width: 400px;
+  position: absolute;
+  top: 70%;
+}
+.input {
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  display: block;
+  width: 100%;
+  background-color: #041955;
+}
+.input::placeholder {
+  color: #d5d5d5;
+}
+.input:focus {
+  outline-color: #fff;
+}
+
+.todos {
+  background-color: #041955;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.todos li {
+  border-top: 1px solid #e5e5e5;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.todos li.completed {
+  color: #fff;
+  text-decoration: line-through;
+}
+
+small {
+  color: #fff;
+  margin-top: 3rem;
+  text-align: center;
+  position: relative;
+  bottom: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 7rem;
+  }
+  form {
+    width: 85%;
+  }
+}
